@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <title>Mentoria</title>
+</head>
+<body>
+  <header>
+    <h1>MENTORIA</h1>
+    <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+  </header>
+  <form  id="my-form">
+    <div class="fieldset-wrapper">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <div class="name">
+          <div class="first">
+            <label for="surname">Nome</label>
+            <input type="text"
+            required
+             id="surname">
+          </div>
+          <div class="last">
+            <label for="lastname">Sobrenome</label>
+            <input type="text"
+            required
+             id="surname">
+          </div>
+        </div>
+        <label for="email">Email <span>(digite um email válido)</span></label>
+        <input type="email" required id="email">
+        <label for="password">Senha <span>(mínimo de 6 caracteres)</span> </label>
+        <input type="password" 
+        required
+        id="password">
+      </fieldset>
+      <fieldset>
+        <legend>Informações do mentor</legend>
+        <label for="mentorname">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+        <input type="text" 
+        required 
+        id="mentorname">
+      </fieldset>
+      <fieldset>
+        <legend>Seus horários disponíveis </legend>
+        <div class="dates">
+          <div class="date-wrapper">
+            <label for="date1">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" required id="date1">
+          </div>
+          <div class="starttime-wrapper">
+            <label for="start1">Das</label>
+            <input type="time" required id="start1">
+          </div>
+          <div class="finishtime-wrapper">
+            <label for="finish1">Até</label>
+            <input type="time"  required id="finish1">
+          </div>
+        </div>
+        <div class="dates">
+          <div class="date-wrapper">
+            <label for="date2">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="date2">
+          </div>
+          <div class="starttime-wrapper">
+            <label for="start2">Das</label>
+            <input type="time" id="start2">
+          </div>
+          <div class="finishtime-wrapper">
+            <label for="finish2">Até</label>
+            <input type="time" id="finish2">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+  <footer>
+    <div class="button">
+      <button type="submit" form ="my-form">SALVAR</button>
+    </div>
+  </footer>
+</body>
+</html>
